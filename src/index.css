@@ -8,11 +8,35 @@ body {
 }
 
 .commonText{
-
+  font-size: 1rem;
 }
 
 .titleText{
-  
+  font-size: 3rem;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+  .titleText{
+    font-size: 1.5rem;
+  }
+
+  .commonText{
+    font-size: 0.8rem;
+  }
+}
+
+.CTA{
+  border-radius: 50px;
+  width: 175px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 15px;
 }
 
 code {

@@ -7,8 +7,11 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
-        <img src={logo}></img>
+        <img style={{width: '100%'}} src={logo}></img>
       </div>
+      <button className='CTA'>
+        book a meeting
+      </button>
     </div>
   )
 }
