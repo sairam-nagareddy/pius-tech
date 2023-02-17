@@ -8,7 +8,7 @@ body {
 }
 
 .commonText{
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .titleText{
@@ -39,6 +39,8 @@ body {
   border: 1px solid white;
   color: white;
   font-size: 15px;
+  background-color: #1F1F1F;
+  cursor: pointer;
 }
 
 code {
