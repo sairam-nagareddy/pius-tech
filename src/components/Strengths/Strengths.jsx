@@ -1,4 +1,5 @@
 import React from 'react'
+import style from './Strengths.module.css'
 
 const Strengths = () => {
   return (
