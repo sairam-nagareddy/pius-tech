@@ -1,5 +1,5 @@
 .clientsContainer{
-    height: 30vh;
+    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
