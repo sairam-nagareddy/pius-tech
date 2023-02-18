@@ -1,0 +1,53 @@
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inputText {
+    margin: 1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    width: 350px;
+    border: none;
+    outline: none;
+}
+.textArea {
+    min-height: 150px;
+}
+
+.nameInput {
+}
+
+.emailInput {
+}
+
+.messageInput {
+    height: 100px;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.sendMessageBtn {
+    padding: 1rem;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+}
+
+.sendMessageBtn:hover {
+    background-color: #FFA500;
+    border: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+}
