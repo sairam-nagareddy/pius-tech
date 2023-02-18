@@ -6,14 +6,16 @@ import { motion } from 'framer-motion';
 const Services = () => {
   const [isActive, setIsActive] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0)
+  let id
 
 
   const activateIndex = (index) => {
     setActiveIndex(index)
+    clearInterval(id)
   }
 
   useEffect(() => {
-    const id = setInterval(() => setActiveIndex((value) => value !== 4 ? value + 1 : 0), 5000);
+    id = setInterval(() => setActiveIndex((value) => value !== 4 ? value + 1 : 0), 7000);
     return () => {
       clearInterval(id);
     };
@@ -21,13 +23,12 @@ const Services = () => {
 
   return (
     <div className={style.servicesContainer}>
-      {/* <div 
-        className={style.infoContainer + ` ${serviceData[activeIndex].title[0]}`}> */}
-      <div className={style.infoContainer + ` ${serviceData ? 'show' : null}`}>
-        <div className={style.servicesSubtitle}>
+      {/*  */}
+      <div className={style.infoContainer}>
+        <div className={style.servicesSubtitle + ` show${activeIndex}`}>
           <span className={style.servicesSubtitleText}>{serviceData[activeIndex].title}</span>
         </div>
-        <p className={style.servicesInfo}>
+        <p className={style.servicesInfo + ` show${activeIndex}`}>
           {serviceData[activeIndex].info}
         </p>
       </div>
@@ -36,7 +37,6 @@ const Services = () => {
             {serviceData.map((item, index) => {
               return (
                 <div key={index} className={(activeIndex === index) ? style.navDot + ' activeNav' : style.navDot + ' inactiveNav'} onClick={() => activateIndex(index)}>
-                  
                 </div>
               )
             })}
