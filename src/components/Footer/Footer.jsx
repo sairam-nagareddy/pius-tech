@@ -6,7 +6,7 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.footerMain}>
         <div className={styles.col1}>
-            <span className='bold titleText'>PiUS TECH</span>,
+            <p className={styles.footerCompany + ' bold'}>PiUS TECH</p>
             <br></br>
             Jai Taramani, E5/15, Bangur Nagar,
             <br></br>
@@ -17,10 +17,8 @@ const Footer = () => {
             India
         </div>
         <div className={styles.col3}>
-          <span className='bold'>Website Policy</span>
-          <br></br>
-          <br></br>
-          <span className='bold'>Privacy Policy</span>
+          <p className=''>Website Policy</p>
+          <p className=''>Privacy Policy</p>
         </div>
       </div>
       <div className={styles.disclaimer}>

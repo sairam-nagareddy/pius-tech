@@ -3,11 +3,13 @@
     min-height: 200px;
     color: black;
     padding: 2rem 1rem;
+    font-size: 0.8rem;
 }
 
 @media screen and (min-width: 500px) {
     .footer{
         padding: 2rem 3rem;
+        font-size: 1rem;
     }
 }
 
@@ -26,9 +28,17 @@
 }
 
 .col3{
+    padding-top: 5.5rem;
     text-align: right;
 }
 
 .disclaimer{
     text-align: center;
+}
+
+.footerCompany{
+    font-weight: bold;
+    font-family: 'Merriweather';
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
