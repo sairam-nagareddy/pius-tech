@@ -6,7 +6,7 @@ const Strengths = () => {
   return (
     <div className={style.strengthContainer}>
       <div className={style.titleContainer}>
-        <span className={`${style.strengthTitle}` +' titleText'}>We will complete the E-Commerce circle with you.</span>
+        <span className={`${style.strengthTitle}`}>We will complete the E-Commerce circle with you.</span>
       </div>
       <motion.div 
         className={style.container}        

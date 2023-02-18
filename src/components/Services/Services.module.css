@@ -1,56 +1,39 @@
 .servicesContainer {
-    /* padding: 0 3rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    padding: 0 2rem;
+    /* margin: 5rem auto; */
     /* height: 100vh; */
+    min-width: 60%;
+    max-width: 600px;
 }
 
-.servicesTitle {
-    margin-bottom: 6rem;
+.infoContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.infoContainer{
-    width: 24rem;
-    display: flex;
-    /* padding: 1rem; */
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     margin: auto;
 }
 
 .servicesSubtitle {
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin-bottom: 1rem;
+    font-family: 'Merriweather';
+    font-size: 2rem;
 }
 
-.app__navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;  
-    padding: 1rem;
-}
-  
-.app__navigation-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #cbcbcb;
-    margin: 0.5rem;
-    transition: background-color 0.2s ease-in-out;    
-}
+@media screen and (min-width: 650px) {
+    .servicesContainer{
+        margin: 10rem auto;
+    }
+    
+    .servicesSubtitle{
+        font-size: 3rem;
+        font-weight: lighter;
+    }
 
-@media screen and (min-width: 768px) {
     .infoContainer{
-        width: 36rem;
+        font-size: 1.5rem;
     }
 }

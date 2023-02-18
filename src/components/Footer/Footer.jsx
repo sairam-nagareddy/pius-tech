@@ -17,6 +17,7 @@ const Footer = () => {
             India
         </div>
         <div className={styles.col3}>
+          <p>Contact</p>
           <p className=''>Website Policy</p>
           <p className=''>Privacy Policy</p>
         </div>

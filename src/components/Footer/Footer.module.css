@@ -32,6 +32,12 @@
     text-align: right;
 }
 
+@media screen and (max-width: 500px){
+    .col3{
+        padding-top: 8rem;
+    }
+}
+
 .disclaimer{
     text-align: center;
 }

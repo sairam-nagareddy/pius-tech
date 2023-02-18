@@ -1,52 +1,81 @@
 .contactContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 700px;
     margin: auto;
+    text-align: center;
 }
 
-.inputText {
-    margin: 1rem;
-    padding: 0.75rem;
-    border-radius: 5px;
-    width: 24rem;
-    border: none;
-    outline: none;
-}
-.textArea {
-    min-height: 150px;
+.contactTitle{
+    font-family: 'Merriweather';
+    font-weight: lighter;
+    font-size: 2rem;
 }
 
-.messageInput {
-    height: 100px;
+.formContainer{
+    width: 100%;
 }
 
-.buttonDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8rem;
-}
-
-.sendMessageBtn {
-    padding: 1rem;
-    border: 1px solid white;
-    outline: none;
-    border-radius: 10px;
-    color: white;
+.inputText, .textarea{
+    width: 100%;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
     background-color: transparent;
-    margin-bottom: 5rem;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
 }
 
-.sendMessageBtn:hover {
-    background-color: #FFA500;
-    border: none;
-    transition: 0.5s ease-in-out;
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.sendMessageBtn{
+    margin: 2rem auto;
+    border-radius: 50px;
+    min-width: 150px;
+    max-width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    background-color: #1F1F1F;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
-.thankYouMessage {
-    height: 25rem;
-    margin-top: 4rem;
+.buttonInnerText {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%);
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+
+.buttonInnerText:hover{
+    top: -50%;
+}
+
+.radioInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.radioBtn{
+    margin-right: 4rem;
+}
+
+@media screen and (min-width: 600px) {
+    .contactTitle{
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
 }
