@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     height: 200px;
@@ -8,33 +8,53 @@
     /* margin-bottom: 1rem; */
 }
 
-.meetingBtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.meetingBtn {
+    border-radius: 50px;
+    min-width: 100px;
+    min-height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    background-color: #1F1F1F;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
-.logo{
+.buttonInnerText {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%);
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+
+.buttonInnerText:hover{
+    top: -50%;
+}
+
+.logo {
     width: 300px;
 }
 
-.meetingBtn{
+.meetingBtn {
     width: 175px;
     height: 50px;
 }
 
-@media screen and (max-width: 426px){
-    .navbar{
+@media screen and (max-width: 426px) {
+    .navbar {
         height: 100px;
         padding: 0rem 1rem;
     }
 
-    .logo{
+    .logo {
         width: 40%;
         min-width: 150px;
     }
 
-    .meetingBtn{
+    .meetingBtn {
         width: 40%;
         height: 40px;
         font-size: 12px;

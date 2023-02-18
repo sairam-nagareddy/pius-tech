@@ -15,7 +15,12 @@ const Banner = () => {
                         across the globe. <br></br>
                         We care deeply about the success of your business on <br></br>various marketplaces.
                     </p>
-                    <div className={styles.joinUsBtn + ' CTA'}>Join us</div>
+                    <div className={styles.joinUsBtn}>
+                        <div className={styles.buttonInnerText}>
+                            <div>Get Started</div>
+                            <div style={{ position: 'relative', top: '10px' }}>Get Started</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
