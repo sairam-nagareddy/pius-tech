@@ -1,29 +1,129 @@
+.bannerContainer{
+    height: 90vh;
+}
+
 .banner{
-    height: 80%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0rem 5rem;
+    flex-direction: column;
+    padding: 0 1rem;
+    position: relative;
+    height: 60%;
+    background-image: linear-gradient(to bottom, transparent,transparent,transparent, transparent, #1F1F1F), url(../../assets/buddha2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .buddha{
-    width: 40vw;
-    height: fit-content;
-    /* transform: translate(20%); */
-    z-index: -1;
-}
-
-.bannerTitle{
+    display: none;
 }
 
 .bannerContent{
-    width: 50%;
-    position: relative;
-    right: 50px;
-    top: 75px;
+    width: 90%;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerTitle{
+    font-size: 1.5rem;
 }
 
 .bannerText{
     position: relative;
-    top: 50px;
+    top: 1rem;
+    font-size: 0.8rem;
+}
+
+.joinUsBtn{
+    width: 125px;
+    position: relative;
+    top: 2rem;
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .bannerContainer{
+        height: 50vh;
+    }
+
+    .banner{
+        background-image: none;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0rem 3rem;
+    }
+
+    .buddha{
+        display: block;
+        width: 50%;
+        max-width: 600px;
+        height: fit-content;
+    }
+
+    .bannerContent{
+        width: 50%;
+        position: relative;
+        top: 0px;
+        left: -30px;
+        transform: none;
+    }
+
+    .bannerTitle{
+        font-size: 2rem;
+    }
+
+    .bannerText{
+        font-size: 1rem;
+    }
+    
+    .joinUsBtn{
+        width: 175px;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .bannerContainer{
+        height: 80vh;
+    }
+
+    .banner{
+        background-image: none;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0rem 3rem;
+    }
+
+    .buddha{
+        display: block;
+        width: 50%;
+        max-width: 600px;
+        height: fit-content;
+    }
+
+    .bannerContent{
+        width: 50%;
+        position: relative;
+        top: 50px;
+        left: -30px;
+        transform: none;
+    }
+
+    .bannerTitle{
+        font-size: 3rem;
+    }
+
+    .bannerText{
+        font-size: 1.5rem;
+    }
+    
+    .joinUsBtn{
+        width: 175px;
+    }
 }

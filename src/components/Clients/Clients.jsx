@@ -8,17 +8,17 @@ import etsy from '../../assets/Etsy.png'
 const Clients = () => {
   return (
     <div className={styles.clientsContainer}>
-      <div>
-        <img src={amazon} alt="" />
+      <div className={styles.amazon + ' ' + styles.client}>
+        <img style={{width:'100%'}} src={amazon} alt="" />
       </div>
-      <div>
-        <img src={ebay} alt="" />
+      <div className={styles.ebay + ' ' + styles.client}>
+        <img style={{width:'100%'}} src={ebay} alt="" />
       </div>
-      <div>
-        <img src={walmart} alt="" />
+      <div className={styles.walmart + ' ' + styles.client}>
+        <img style={{width:'100%'}} src={walmart} alt="" />
       </div>
-      <div>
-        <img src={etsy} alt="" />
+      <div className={styles.etsy + ' ' + styles.client}>
+        <img style={{width:'100%'}} src={etsy} alt="" />
       </div>
     </div>
   )

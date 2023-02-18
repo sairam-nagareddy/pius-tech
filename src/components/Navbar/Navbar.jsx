@@ -9,9 +9,12 @@ const Navbar = () => {
       <div className={styles.logo}>
         <img style={{width: '100%'}} src={logo}></img>
       </div>
-      <button className='CTA'>
-        book a meeting
-      </button>
+      <div className={styles.meetingBtn + ' CTA'}>
+        <div className='buttonInnerText'>
+          <div>book a meeting</div>
+          {/* <div className='buttonBottomText'>book a meeting</div> */}
+        </div>
+      </div>
     </div>
   )
 }

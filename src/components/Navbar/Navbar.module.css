@@ -5,9 +5,38 @@
     justify-content: space-between;
     align-items: center;
     padding: 0rem 3rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+}
+
+.meetingBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo{
     width: 300px;
+}
+
+.meetingBtn{
+    width: 175px;
+    height: 50px;
+}
+
+@media screen and (max-width: 426px){
+    .navbar{
+        height: 100px;
+        padding: 0rem 1rem;
+    }
+
+    .logo{
+        width: 40%;
+        min-width: 150px;
+    }
+
+    .meetingBtn{
+        width: 40%;
+        height: 40px;
+        font-size: 12px;
+    }
 }

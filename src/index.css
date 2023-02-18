@@ -21,30 +21,22 @@ body {
   font-weight: lighter;
 }
 
-.bold{
-  font-weight: bold;
-}
-
-@media screen and (max-width: 450px) {
-  .titleText{
-    font-size: 1.5rem;
-  }
-
-  .commonText{
-    font-size: 0.8rem;
-  }
-}
-
 .CTA{
   border-radius: 50px;
-  width: 175px;
-  height: 60px;
+  min-width: 100px;
+  min-height: 40px;
   background-color: transparent;
   border: 1px solid white;
   color: white;
-  font-size: 15px;
   background-color: #1F1F1F;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold{
+  font-weight: bold;
 }
 
 code {
