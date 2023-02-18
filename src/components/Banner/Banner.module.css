@@ -13,6 +13,32 @@
     background-repeat: no-repeat;
 }
 
+.joinUsBtn {
+    border-radius: 50px;
+    min-width: 100px;
+    min-height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    background-color: #1F1F1F;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttonInnerText {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%);
+    white-space: nowrap;
+    transition: 0.5s ease;
+}
+
+.buttonInnerText:hover{
+    top: -50%;
+}
+
 .buddha{
     display: none;
 }
