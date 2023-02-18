@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     align-items: center;
-    margin-bottom: 4rem;
+    margin: 4rem 0rem;
 }
 
 .client{

@@ -1,0 +1,34 @@
+.footer{
+    background-color: #faa72a;
+    min-height: 200px;
+    color: black;
+    padding: 2rem 1rem;
+}
+
+@media screen and (min-width: 500px) {
+    .footer{
+        padding: 2rem 3rem;
+    }
+}
+
+.footerMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+}
+
+.col1{
+    text-align: left;
+}
+
+.col2{
+    text-align: right;
+}
+
+.col3{
+    text-align: right;
+}
+
+.disclaimer{
+    text-align: center;
+}
