@@ -24,11 +24,15 @@ const Contact = () => {
     //   email: email,
     //   message: message
     // }
+    console.log("HI")
     const subject = `New message from ${name} (${email})`;
     const body = `Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`;
     const mailtoLink = `mailto:sairam.reddy@live.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    console.log("mailToLink", mailtoLink)
     window.location.href = mailtoLink;
     setLoading(false)
+    setIsFormSubmitted(true);
+
     // client.create(contact)
     //   .then(() => {
     //     setLoading(false);

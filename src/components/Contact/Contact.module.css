@@ -4,13 +4,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    min-height: 10rem;
 }
 
 .inputText {
     margin: 1rem;
     padding: 0.75rem;
     border-radius: 5px;
-    width: 350px;
+    width: 25rem;
     border: none;
     outline: none;
 }
