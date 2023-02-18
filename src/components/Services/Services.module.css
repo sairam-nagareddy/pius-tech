@@ -8,6 +8,7 @@
     /* height: 100vh; */
     min-width: 60%;
     max-width: 600px;
+    min-height: 500px;
 }
 
 .infoContainer {
@@ -26,6 +27,7 @@
 @media screen and (min-width: 650px) {
     .servicesContainer{
         margin: 10rem auto;
+        min-height: 500px;
     }
     
     .servicesSubtitle{
@@ -36,4 +38,22 @@
     .infoContainer{
         font-size: 1.5rem;
     }
+}
+
+.appNav {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.navDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }

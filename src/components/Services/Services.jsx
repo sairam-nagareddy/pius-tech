@@ -1,21 +1,46 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './Services.module.css'
-import NavigationDots from '../Navbar/NavigationDots'
+import serviceData from './data.json'
+import { motion } from 'framer-motion';
 
 const Services = () => {
   const [isActive, setIsActive] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0)
+
+
+  const activateIndex = (index) => {
+    setActiveIndex(index)
+  }
+
+  useEffect(() => {
+    const id = setInterval(() => setActiveIndex((value) => value !== 4 ? value + 1 : 0), 5000);
+    return () => {
+      clearInterval(id);
+    };
+  }, [])
+
   return (
     <div className={style.servicesContainer}>
-      <div className={style.infoContainer}>
+      {/* <div 
+        className={style.infoContainer + ` ${serviceData[activeIndex].title[0]}`}> */}
+      <div className={style.infoContainer + ` ${serviceData ? 'show' : null}`}>
         <div className={style.servicesSubtitle}>
-          <span className={style.servicesSubtitleText}>Marketplace Strategy</span>
+          <span className={style.servicesSubtitleText}>{serviceData[activeIndex].title}</span>
         </div>
         <p className={style.servicesInfo}>
-          We get to know your business so that we can suggest the best Amazon business model for you. If you’re already selling on Amazon, we’ll let you know if it makes sense to change course to a different business model or maintain course with your current one.
+          {serviceData[activeIndex].info}
         </p>
       </div>
       <div className='navigation'>
-        <NavigationDots active={isActive}/>
+        <div className={style.appNav}>
+            {serviceData.map((item, index) => {
+              return (
+                <div key={index} className={(activeIndex === index) ? style.navDot + ' activeNav' : style.navDot + ' inactiveNav'} onClick={() => activateIndex(index)}>
+                  
+                </div>
+              )
+            })}
+        </div>
       </div>
     </div>
   )

@@ -43,3 +43,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.inactiveNav{
+  background-color: #cbcbcb;
+  transition: 0.3s ease;
+}
+
+.activeNav{
+  background-color: orange;
+  transition: 0.3s ease;
+}
+/* 
+.M, .C, .P, .A, .R{
+  transition: 0.5s ease;
+} */
