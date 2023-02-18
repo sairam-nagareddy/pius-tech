@@ -20,7 +20,7 @@ const Strengths = () => {
           }}
           transition={{ duration: 0.5, type: 'easeInOut' }}
           >
-          <span className={`${style.strengthSpan}` + ' commonText'}>Support</span>
+          <span className={`${style.strengthSpan}`}>Support</span>
         </motion.div>
         <motion.div 
           className={`${style.circle} ${style.circle2}`}
@@ -31,7 +31,7 @@ const Strengths = () => {
           }}
           transition={{ duration: 0.5, type: 'easeInOut' }}
           >
-          <span className={`${style.strengthSpan}` + ' commonText'}>Speed</span>
+          <span className={`${style.strengthSpan}`}>Speed</span>
         </motion.div>
         <motion.div 
           className={`${style.circle} ${style.circle3}`}
@@ -42,7 +42,7 @@ const Strengths = () => {
           }}
           transition={{ duration: 0.5, type: 'easeInOut' }}
           >
-          <span className={`${style.strengthSpan}` + ' commonText'}>Expertise</span>
+          <span className={`${style.strengthSpan}`}>Expertise</span>
         </motion.div>
       </motion.div>
     </div>
