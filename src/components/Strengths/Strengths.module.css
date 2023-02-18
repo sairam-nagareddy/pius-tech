@@ -1,61 +1,109 @@
 .strengthContainer {
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin: 5rem auto;
+    /* height: 100vh; */
     /* margin-bottom: 15rem; */
 }
 .titleContainer {
-    position: absolute;
-    margin: 3rem;
-    top: 2rem;
+    margin: 5rem;
 }
 .container {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin: auto;
+    /* height: 100vh; */
+}
+
+.strengthTitle {
+    font-size: 2rem;
 }
 
 .strengthSpan {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 .circle {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #fff;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
     color: #fff;
     background-color: transparent;
+    margin: 5rem auto;
 }
   
 .circle1 {
-    top: 25rem;
-    left: -17rem;
-    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
 }
   
 .circle2 {
-    top: 25rem;
-    left: -6rem;
-    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
 }
   
 .circle3 {
-    top: 25rem;
-    left: 5rem;
-    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .circle {
+        width: 16rem;
+        height: 16rem;
+    }
+    .strengthSpan {
+        margin-top: 7rem !important;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .strengthSpan {
+        margin-top: 11rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .circle{
+        width: 8rem;
+        height: 8rem;
+        margin: 3rem auto;
+    }
+    .strengthTitle {
+        font-size: 1.5rem;
+    }
+    .strengthSpan {
+        margin-top: 3rem !important;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .circle{
+        width: 6rem;
+        height: 6rem;
+        margin: 2rem auto;
+    }
+    .strengthTitle {
+        font-size: 1.5rem;
+    }
+    .strengthSpan {
+        margin-top: 2rem !important;
+        font-size: 1rem;
+    }
+    .titleContainer{
+        margin: 2rem 5rem;
+    }
 }

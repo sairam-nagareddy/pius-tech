@@ -20,7 +20,6 @@ const Services = () => {
       <div className='navigation'>
         <NavigationDots active={isActive}/>
       </div>
-
     </div>
   )
 }
