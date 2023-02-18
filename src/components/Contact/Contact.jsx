@@ -71,7 +71,7 @@ const Contact = () => {
         
       </div>
       ): (
-        <div>
+        <div className={styles.thankYouMessage}>
           <h3 className='commonText'>Thank you for getting in touch!</h3>
         </div>
       )}

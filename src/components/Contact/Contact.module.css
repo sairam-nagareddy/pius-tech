@@ -45,3 +45,8 @@
     transition: 0.5s ease-in-out;
     cursor: pointer;
 }
+
+.thankYouMessage {
+    height: 25rem;
+    margin-top: 4rem;
+}
