@@ -1,0 +1,44 @@
+.servicesContainer {
+    padding: 0 3rem;
+    height: 100vh;
+}
+
+.servicesTitle {
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+}
+
+.infoContainer{
+    margin: 0 20rem 0;
+}
+
+.servicesSubtitle {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.servicesInfo {
+}
+
+/* .navigation {
+    display: flex;
+} */
+
+.app__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;  
+    padding: 1rem;
+}
+  
+.app__navigation-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #cbcbcb;
+    margin: 0.5rem;
+    transition: background-color 0.2s ease-in-out;    
+}
