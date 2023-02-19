@@ -7,150 +7,159 @@
     margin-top: 3rem;
 }
 
-.titleContainer{
+.titleContainer {
     text-align: center;
     margin-bottom: 4rem;
 }
 
-.strengthTitle{
+.strengthTitle {
     font-family: 'Merriweather';
     font-size: 2rem;
 }
 
-.strengthSpan{
+.strengthSpan {
     font-size: 0.9rem;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.circle{
+.circle {
     position: relative;
     width: 175px;
     height: 175px;
-    border: 1px solid orange;
+    border: 1px solid white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.circle2{
+.circle2 {
     position: relative;
     bottom: 30px;
 }
 
-.circle3{
+.circle3 {
     position: relative;
     bottom: 60px;
 }
 
 @media screen and (min-width: 650px) and (max-width: 1024px) {
-    .strengthTitle{
+    .strengthTitle {
         font-size: 3rem;
         font-weight: lighter;
     }
 
-    .strengthSpan{
+    .strengthSpan {
         font-size: 1.5rem;
     }
 
-    .container{
+    .container {
         margin-top: 3rem;
         display: flex;
         flex-direction: row;
     }
 
-    .circle{
+    .circle {
         width: 250px;
         height: 250px;
     }
 
-    .circle1{
+    .circle1 {
         position: relative;
         left: 20px;
     }
 
-    .circle2{
+    .circle2 {
         position: relative;
         bottom: 0;
     }
 
-    .circle3{
+    .circle3 {
         position: relative;
         bottom: 0;
         right: 20px;
     }
 
     .circle:before,
-    .circle:after {
-
-    }
+    .circle:after {}
 }
 
 .circle:before,
 .circle:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
-  left: 0;
-  border: 1px solid orange;
-  border-radius: 50%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid white;
+    border-radius: 50%;
 }
 
 .circle:before {
     animation: ripple 2s linear infinite;
 }
-  
+
 .circle:after {
-animation: ripple 2s linear 1s infinite;
-}
-  
-@keyframes ripple{
-0% { transform: scale(1); opacity:0.4 }
-50% { transform: scale(1.3); opacity:0.3; }
-100% { transform: scale(1.6); opacity:0; }
+    /* animation: ripple 4s linear 1s infinite; */
 }
 
-@media screen and (min-width: 1025px){
-    .strengthTitle{
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 0.6
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .strengthTitle {
         font-size: 3rem;
         font-weight: lighter;
     }
 
-    .strengthSpan{
+    .strengthSpan {
         font-size: 1.5rem;
     }
 
-    .container{
+    .container {
         margin-top: 3rem;
         display: flex;
         flex-direction: row;
     }
 
-    .circle{
+    .circle {
         width: 350px;
         height: 350px;
     }
 
-    .circle1{
+    .circle1 {
         position: relative;
         left: 20px;
     }
 
-    .circle2{
+    .circle2 {
         position: relative;
         bottom: 0;
     }
 
-    .circle3{
+    .circle3 {
         position: relative;
         bottom: 0;
         right: 20px;
