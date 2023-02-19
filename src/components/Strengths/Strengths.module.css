@@ -29,6 +29,7 @@
 }
 
 .circle{
+    position: relative;
     width: 175px;
     height: 175px;
     border: 1px solid orange;
@@ -83,6 +84,11 @@
         position: relative;
         bottom: 0;
         right: 20px;
+    }
+
+    .circle:before,
+    .circle:after {
+
     }
 }
 
