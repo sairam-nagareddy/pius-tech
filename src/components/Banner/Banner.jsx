@@ -14,7 +14,7 @@ const Banner = () => {
                 <img src={buddha} className={styles.buddha}></img>
                 <div className={styles.bannerContent}>
                     <div className={styles.bannerTitle}>
-                        <span>Complete the <span style={{whiteSpace:'nowrap'}}>E-Commerce</span> <br></br> Circle with </span><span className='bold'>us.</span>
+                        <span>Complete the <span style={{whiteSpace:'nowrap'}}>E-Commerce</span> <br></br> Circle with </span><span className='bold' style={{color: "orange"}}>us.</span>
                     </div>
                     <p className={styles.bannerText}>Marketplace management with warehouse partners
                         across the globe. <br></br>

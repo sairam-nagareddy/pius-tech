@@ -40,6 +40,10 @@
     }
 }
 
+.firstWordTitle {
+    color: orange;
+}
+
 .appNav {
     margin-top: 2rem;
     display: flex;
