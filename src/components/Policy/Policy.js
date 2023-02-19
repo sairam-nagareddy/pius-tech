@@ -246,7 +246,8 @@ const Policy = () => {
                     <br></br><br></br>
                     Google
                     <br></br><br></br>
-                    Google’s advertising requirements can be summed up by Google’s Advertising Principles. They are put in place to provide a positive experience for users. https://support.google.com/adwordspolicy/answer/1316548?hl=en
+                    Google’s advertising requirements can be summed up by Google’s Advertising Principles. They are put in place to provide a positive experience for users.
+                    <p>https://support.google.com/adwordspolicy/<br></br>answer/1316548?hl=en</p>
                     <br></br><br></br>
                     We use Google AdSense Advertising on our website.
                     <br></br><br></br>
