@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 
 const Footer = () => {
@@ -6,20 +7,28 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.footerMain}>
         <div className={styles.col1}>
-            <p className={styles.footerCompany + ' bold'}>PiUS TECH</p>
-            <br></br>
-            Jai Taramani, E5/15, Bangur Nagar,
-            <br></br>
-            Goregoan West,
-            <br></br>
-            Mumbai, Maharashtra 400104,
-            <br></br>
-            India
+          <Link to="/">
+          <p style={{color:'white'}} className={styles.footerCompany + ' '}>PiUS TECH</p>
+          </Link>
+          <br></br>
+          Jai Taramani, E5/15, Bangur Nagar,
+          <br></br>
+          Goregoan West,
+          <br></br>
+          Mumbai, Maharashtra 400104,
+          <br></br>
+          India
         </div>
         <div className={styles.col3}>
-          <p>Contact</p>
-          <p className=''>Website Policy</p>
-          <p className=''>Privacy Policy</p>
+          <Link to="/contact">
+            <p style={{color: 'black'}}>Contact</p>
+          </Link>
+          <Link to="/policy">
+            <p style={{color: 'black'}}>Website Policy</p>
+          </Link>
+          <Link to="/policy">
+            <p style={{color: 'black'}}>Privacy Policy</p>
+          </Link>
         </div>
       </div>
       <div className={styles.disclaimer}>

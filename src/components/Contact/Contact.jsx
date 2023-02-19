@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Footer from '../Footer/Footer';
+import Navbar from '../Navbar/Navbar';
 import styles from './Contact.module.css'
 
 const Contact = () => {
@@ -28,6 +30,8 @@ const Contact = () => {
   }
 
   return (
+    <>
+    <Navbar />
     <div className={styles.contactContainer} id="contact">
       <h2 className={styles.contactTitle}>Contact Us</h2>
 
@@ -81,6 +85,8 @@ const Contact = () => {
         </div>
       )}
     </div>
+    <Footer />
+    </>
   )
 }
 
