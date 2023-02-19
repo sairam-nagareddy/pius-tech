@@ -4,12 +4,16 @@ import logo from '../../assets/logo.png'
 
 
 const Navbar = () => {
+  const moveToContact = () => {
+    window.scrollTo(0, 2500)
+  }
+
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
         <img style={{width: '100%'}} src={logo}></img>
       </div>
-      <div className={styles.meetingBtn}>
+      <div onClick={() => moveToContact()} className={styles.meetingBtn}>
         <div className={styles.buttonInnerText}>
           <div>book a meeting</div>
           <div style={{position:'relative', top:'10px'}}>book a meeting</div>

@@ -28,7 +28,7 @@ const Contact = () => {
   }
 
   return (
-    <div className={styles.contactContainer}>
+    <div className={styles.contactContainer} id="contact">
       <h2 className={styles.contactTitle}>Contact Us</h2>
 
       {!isFormSubmitted ? (
