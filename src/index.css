@@ -12,6 +12,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #1F1F1F;
   color: white;
+  /* color: '#1F1F1F'; */
+  /* background-color: rgb(211, 211, 211); */
   font-family: 'Poppins', sans-serif;
 }
 

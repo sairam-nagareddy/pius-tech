@@ -1,36 +1,12 @@
 .clientsContainer{
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
-    margin: 4rem 0rem;
-}
-
-.client{
-    width: 100%;
     display: flex;
-    justify-content: center;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    overflow-x: scroll;
 }
 
-.ebay{
-    position: relative;
-    bottom: 10px;
-}
-
-.etsy{
-    max-width: 130px;
-}
-
-@media screen and (min-width: 500px) {
-    .clientsContainer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .client{
-        max-width: 200px;
-    }
+.clientImg{
+    margin: 0 auto;
 }
