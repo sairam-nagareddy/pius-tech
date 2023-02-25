@@ -1,11 +1,15 @@
 .navbar {
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 100px;
     justify-content: space-between;
     align-items: center;
     padding: 0rem 3rem;
-    /* margin-bottom: 1rem; */
+    margin: 2rem 0;
+    background-color: rgba(31, 31, 31, 0.8);
+    z-index: 2;
 }
 
 .meetingBtn {
@@ -13,9 +17,9 @@
     min-width: 125px;
     min-height: 40px;
     background-color: transparent;
-    border: 1px solid orange;
-    color: orange;
-    background-color: #1F1F1F;
+    border: 1px solid #1f1f1f;
+    color: black;
+    background-color: orange;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -50,6 +54,7 @@
     .navbar {
         height: 100px;
         padding: 0rem 1rem;
+        margin: 0rem;
     }
 
     .logo {

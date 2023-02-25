@@ -13,33 +13,18 @@ const Strengths = () => {
         >
         <motion.div 
           className={`${style.circle} ${style.circle1}`}
-          whileHover={{ 
-            scale: 1.1,
-            textShadow: "0px 0px 8px rgb(255, 255, 255)",
-            // boxShadow: "0px 0px 8px rgb(255, 255, 255)"
-          }}
           transition={{ duration: 0.5, type: 'easeInOut' }}
           >
           <span className={`${style.strengthSpan}`}>Support</span>
         </motion.div>
         <motion.div 
           className={`${style.circle} ${style.circle2}`}
-          whileHover={{ 
-            scale: 1.1,
-            textShadow: "0px 0px 8px rgb(255, 255, 255)",
-            // boxShadow: "0px 0px 8px rgb(255, 255, 255)"
-          }}
           transition={{ duration: 0.5, type: 'easeInOut' }}
           >
           <span className={`${style.strengthSpan}`}>Speed</span>
         </motion.div>
         <motion.div 
           className={`${style.circle} ${style.circle3}`}
-          whileHover={{ 
-            scale: 1.1,
-            textShadow: "0px 0px 8px rgb(255, 255, 255)",
-            // boxShadow: "0px 0px 8px rgb(255, 255, 255)"
-          }}
           transition={{ duration: 0.5, type: 'easeInOut' }}
           >
           <span className={`${style.strengthSpan}`}>Expertise</span>

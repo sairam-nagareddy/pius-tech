@@ -18,9 +18,10 @@
     min-width: 100px;
     min-height: 50px;
     background-color: transparent;
-    border: 1px solid orange;
-    color: orange;
-    background-color: #1F1F1F;
+    border: 1px solid #1F1F1F;
+    color: black;
+    /* background-color: #1F1F1F; */
+    background-color: orange;
     cursor: pointer;
     position: relative;
     overflow: hidden;
