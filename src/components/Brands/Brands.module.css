@@ -8,21 +8,36 @@
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+    text-align: center;
+    font-weight: bold;
     margin: 2rem;
 }
 
 .brands {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
-    margin: 2.5rem;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .brandImage {
-    width: auto;
-    /* max-width: 100%; */
-    height: auto;
-    object-fit: contain;
-    margin: 1rem;
+    max-width: 200px;
+    width: 100%;
+    margin: auto;
+    max-height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+    .brands {
+        grid-template-columns: 1fr 1fr;
+    }
+    .brandImage {
+        max-width: 150px;
+    }
+    .brandsTitle {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
 }
