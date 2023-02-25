@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './Services.module.css'
 import serviceData from './data.json'
 import { motion } from 'framer-motion';
@@ -7,7 +7,6 @@ import { useSwipeable } from 'react-swipeable';
 const Services = () => {
   const [isActive, setIsActive] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
-  const swiperRef = useRef(null);
   let id;
 
 
@@ -30,7 +29,7 @@ const Services = () => {
   };
 
   useEffect(() => {
-    id = setInterval(() => setActiveIndex((value) => value !== 4 ? value + 1 : 0), 7000);
+    id = setInterval(() => setActiveIndex((value) => value !== 8 ? value + 1 : 0), 7000);
     return () => {
       clearInterval(id);
     };
@@ -46,7 +45,11 @@ const Services = () => {
         {...swipeHandlers}
         >
         <div className={style.servicesSubtitle + ` show${activeIndex}`}>
-          <span className={style.firstWordTitle}>{serviceData[activeIndex].title.split(' ')[0] + ' '}</span><span className={style.servicesSubtitleText}>{serviceData[activeIndex].title.split(' ').slice(1).join(' ')}</span>
+          <div dangerouslySetInnerHTML={{__html: serviceData[activeIndex].image}} className={style.imgContainer}>
+          </div>
+          <div>
+            <span className={style.firstWordTitle}>{serviceData[activeIndex].title.split(' ')[0] + ' '}</span><span className={style.servicesSubtitleText}>{serviceData[activeIndex].title.split(' ').slice(1).join(' ')}</span>
+          </div>
         </div>
         <p className={style.servicesInfo + ` show${activeIndex}`}>
           {serviceData[activeIndex].info}

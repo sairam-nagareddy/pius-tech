@@ -1,22 +1,42 @@
 [
     {
         "title": "Marketplace Strategy",
-        "info": "We get to know your business so that we can suggest the best Amazon business model for you. If you’re already selling on Amazon, we’ll let you know if it makes sense to change course to a different business model or maintain course with your current one."
+        "info": "We get to know your business so that we can suggest the best Amazon business model for you. If you’re already selling on Amazon, we’ll let you know if it makes sense to change course to a different business model or maintain course with your current one.",
+        "image": "<i class='fa-solid fa-magnifying-glass'></i>"
     },
     {
         "title": "Comprehensive Keyword Research",
-        "info": "Identifying the words Online customers search to find and purchase products is at the heart of selling on any Online Marketplace. We use a sophisticated process for identifying targeted keywords to allow your products to be indexed and searchable by the search algorithm as well as for Advertising campaigns using customer surveys and keyword research software."
+        "info": "Identifying the words Online customers search to find and purchase products is at the heart of selling on any Online Marketplace. We use a sophisticated process for identifying targeted keywords to allow your products to be indexed and searchable by the search algorithm as well as for Advertising campaigns using customer surveys and keyword research software.",
+        "image": "<i class='fa-solid fa-book'></i>"
     },
     {
         "title": "Product Listing Copy Writing",
-        "info": "The goal of the product listing copy writing is to make your product more discoverable as well as improving the conversion rate from potential customers clicking on a listing to converting into a purchase. We use the information gathered from keyword research to write our clients product detail page content (title, bullet point, product description, back-end search terms)."
+        "info": "The goal of the product listing copy writing is to make your product more discoverable as well as improving the conversion rate from potential customers clicking on a listing to converting into a purchase. We use the information gathered from keyword research to write our clients product detail page content (title, bullet point, product description, back-end search terms).",
+        "image": "<i class='fa-regular fa-rectangle-list'></i>"
     },
     {
         "title": "Advertising and Campaign Management",
-        "info": "Once product listing copy is updated, we turn our focus towards advertising through Amazon Advertising by running sponsored products (campaign manager), sponsored brands, headline searches, and product display ads."
+        "info": "Once product listing copy is updated, we turn our focus towards advertising through Amazon Advertising by running sponsored products (campaign manager), sponsored brands, headline searches, and product display ads.",
+        "image": "<i class='fa-brands fa-buysellads'></i>"
     },
     {
         "title": "Reporting",
-        "info": "We provide a monthly strategy report which details key performance metrics, outlines our strategy, tasks performed by us, and action steps for the next month. The strategic report presents a simple executive summary to see at a snapshot the performance of the Online Marketplace account. This helps paint a clear picture of the account health and informs stakeholders of key information."
+        "info": "We provide a monthly strategy report which details key performance metrics, outlines our strategy, tasks performed by us, and action steps for the next month. The strategic report presents a simple executive summary to see at a snapshot the performance of the Online Marketplace account. This helps paint a clear picture of the account health and informs stakeholders of key information.",
+        "image": "<i class='fa-solid fa-file-lines'></i>"
+    },
+    {
+        "title": "Pricing Analysis",
+        "info": "Pricing your products correctly is the most critical part of your Amazon Business & we are experts in pricing products so as to make profits in online as well as offline markets.",
+        "image": "<i class='fa-solid fa-rocket'></i>"
+    },
+    {
+        "title": "External Traffic Sources",
+        "info": "Looking to Drive more traffic from outside of Amazon? Great! The Expert Team at SORTD can help you with Facebook, Google, YouTube, Instagram… and more!",
+        "image": "<i class='fa-solid fa-traffic-light'></i>"
+    },
+    {
+        "title": "Online Distribution",
+        "info": "If your products are selling worth more than Rs.10,00,000 per month on Amazon India then we outright buy your products & waive off all your overheads.",
+        "image": "<i class='fa-solid fa-globe'></i>"
     }
 ]

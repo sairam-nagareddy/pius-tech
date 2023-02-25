@@ -20,6 +20,7 @@ import teos from '../../assets/teos.png'
 import sudocrem from '../../assets/sudocrem.png'
 import React from 'react'
 import styles from './Brands.module.css'
+import { motion } from 'framer-motion'
 
 const Brands = () => {
     return (
@@ -27,7 +28,12 @@ const Brands = () => {
             <div className={`titleText ${styles.brandsTitle}`}>
                 <span>Brands We Manage</span>
             </div>
-            <div className={styles.brands}>
+            <motion.div 
+                className={styles.brands}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 3, type: 'easeInOut' }}
+                >
                 <img className={styles.brandImage} src={bigBrandsLogo}></img>
                 <img className={styles.brandImage} src={craftmix}></img>
                 <img className={styles.brandImage} src={ellas}></img>
@@ -48,7 +54,7 @@ const Brands = () => {
                 <img className={styles.brandImage} src={bargain}></img>
                 <img className={styles.brandImage} src={sudocrem}></img>
                 <img className={styles.brandImage} src={teos}></img>
-            </div>
+            </motion.div>
         </div>
     )
 }

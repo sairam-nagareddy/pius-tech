@@ -19,9 +19,16 @@
 }
 
 .servicesSubtitle {
+    display: flex;
+    flex-direction: row;
     margin-bottom: 1rem;
     font-family: 'Merriweather';
     font-size: 2rem;
+}
+
+.imgContainer {
+    margin-right: 1.5rem;
+    /* margin-top: 0.5rem; */
 }
 
 @media screen and (min-width: 650px) {
