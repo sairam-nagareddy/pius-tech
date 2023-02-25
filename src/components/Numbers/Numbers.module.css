@@ -1,0 +1,35 @@
+.NumberSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Number{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.NumberValue{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .NumberSection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: top;
+    }
+
+    .Number{
+        margin-bottom: 2rem;
+    }
+
+    .NumberValue{
+        font-size: 2rem;
+    }
+}

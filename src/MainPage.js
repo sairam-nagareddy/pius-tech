@@ -7,12 +7,14 @@ import Navbar from './components/Navbar/Navbar';
 import Services from './components/Services/Services';
 import Strengths from './components/Strengths/Strengths';
 import Brands from './components/Brands/Brands';
+import Numbers from './components/Numbers/Numbers';
 
 function MainPage() {
     return (
         <div className="App">
             <Navbar />
             <Banner />
+            <Numbers />
             <Clients />
             <Services />
             <Strengths />
