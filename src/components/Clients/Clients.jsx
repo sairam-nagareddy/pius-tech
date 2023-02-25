@@ -23,17 +23,13 @@ const Clients = () => {
         <div className={styles.mapping}>
           {marketplaces.map((src, index) => {
             return (
-              <div key={'1' + src + index} className={styles.client}>
                 <img className={styles.clientImg} src={src} alt="" />
-              </div>
             )
           })}
           {/* Second Mapping */}
           {marketplaces.map((src, index) => {
             return (
-              <div key={src + index} className={styles.client}>
                 <img className={styles.clientImg} src={src} alt="" />
-              </div>
             )
           })}
         </div>
