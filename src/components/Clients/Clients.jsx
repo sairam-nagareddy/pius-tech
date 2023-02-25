@@ -12,41 +12,31 @@ import tatacliq from '../../assets/tatacliq.png'
 import moglix from '../../assets/moglix.png'
 import healthkart from '../../assets/healthkart.png'
 
+const marketplaces = [
+  amazon, ebay, walmart, etsy, meesho, jiomart, nykaa, firstCry, tatacliq, moglix, healthkart
+]
+
 const Clients = () => {
   return (
     <div className={styles.clientsContainer}>
-      <div className={styles.amazon + ' ' + styles.client}>
-        <img className={styles.clientImg} src={amazon} alt="" />
-      </div>
-      <div className={styles.ebay + ' ' + styles.client}>
-        <img className={styles.clientImg} src={ebay} alt="" />
-      </div>
-      <div className={styles.walmart + ' ' + styles.client}>
-        <img className={styles.clientImg} src={walmart} alt="" />
-      </div>
-      <div className={styles.etsy + ' ' + styles.client}>
-        <img className={styles.clientImg} src={etsy} alt="" />
-      </div>
-      <div className={styles.meesho + ' ' + styles.client}>
-        <img className={styles.clientImg} src={meesho} alt="" />
-      </div>
-      <div className={styles.jiomart + ' ' + styles.client}>
-        <img className={styles.clientImg} src={jiomart} alt="" />
-      </div>
-      <div className={styles.nykaa + ' ' + styles.client}>
-        <img className={styles.clientImg} src={nykaa} alt="" />
-      </div>
-      <div className={styles.firstCry + ' ' + styles.client}>
-        <img className={styles.clientImg} src={firstCry} alt="" />
-      </div>
-      <div className={styles.tatacliq + ' ' + styles.client}>
-        <img className={styles.clientImg} src={tatacliq} alt="" />
-      </div>
-      <div className={styles.moglix + ' ' + styles.client}>
-        <img className={styles.clientImg} src={moglix} alt="" />
-      </div>
-      <div className={styles.healthkart + ' ' + styles.client}>
-        <img className={styles.clientImg} src={healthkart} alt="" />
+      <div className={styles.miniContainer}>
+        <div className={styles.mapping}>
+          {marketplaces.map((src, index) => {
+            return (
+              <div key={'1' + src + index} className={styles.client}>
+                <img className={styles.clientImg} src={src} alt="" />
+              </div>
+            )
+          })}
+          {/* Second Mapping */}
+          {marketplaces.map((src, index) => {
+            return (
+              <div key={src + index} className={styles.client}>
+                <img className={styles.clientImg} src={src} alt="" />
+              </div>
+            )
+          })}
+        </div>
       </div>
     </div>
   )

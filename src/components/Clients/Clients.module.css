@@ -1,12 +1,62 @@
-.clientsContainer{
+.clientsContainer {
     display: flex;
-    flex: 1;
-    justify-content: space-evenly;
+    flex-direction: row;
     align-items: center;
     background-color: white;
-    overflow-x: scroll;
+    height: 200px;
+    box-shadow: 0px 0px 25px #1F1F1F inset;
 }
 
-.clientImg{
-    margin: 0 auto;
+.miniContainer {
+    width: 200%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.mapping {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 200%;
+    position: absolute;
+    left: 0;
+    animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+.clientsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.client {
+    min-width: 150px;
+    max-width: 250px;
+    margin: 0.5rem;
+}
+
+.clientImg {
+    width: 100%;
+}
+
+@keyframes carousel {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
 }
