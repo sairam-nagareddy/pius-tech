@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin: 3rem 0rem;
 }
 
 .NumberValue{
@@ -26,7 +26,7 @@
     }
 
     .Number{
-        margin-bottom: 2rem;
+        margin: 2rem 0rem;
     }
 
     .NumberValue{
