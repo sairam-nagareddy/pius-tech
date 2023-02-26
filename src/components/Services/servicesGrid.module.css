@@ -1,0 +1,75 @@
+.servicesGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.serviceItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 0.5s ease;
+    height: fit-content;
+    padding: 1rem;
+}
+
+.serviceItem:hover{
+    transform: translateY(-5%);
+    box-shadow: 0px 0px 15px orange;
+}
+
+.serviceContent{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.serviceIcon{
+    font-size: 1.7rem;
+    color: orange;
+}
+
+.serviceTitle{
+    font-family: 'Merriweather';
+    font-size: 1.7rem;
+    /* color: orange; */
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .servicesGrid{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .serviceTitle, .serviceIcon{
+        font-size: 1rem;
+    }
+
+    .serviceText{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .servicesGrid{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .serviceTitle, .serviceIcon{
+        font-size: 1.25rem;
+    }
+
+    .serviceText{
+        font-size: 0.85rem;
+    }
+
+    .serviceItem:hover{
+        transform: none;
+        box-shadow: 0px 0px 10px orange;
+    }
+}

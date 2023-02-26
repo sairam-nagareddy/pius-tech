@@ -26,7 +26,7 @@ const Brands = () => {
     return (
         <div className={styles.brandsContainer}>
             <div className={`titleText ${styles.brandsTitle}`}>
-                <span>Brands We Manage</span>
+                <span>Our Clients</span>
             </div>
             <motion.div 
                 className={styles.brands}

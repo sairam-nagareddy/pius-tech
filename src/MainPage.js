@@ -8,6 +8,7 @@ import Services from './components/Services/Services';
 import Strengths from './components/Strengths/Strengths';
 import Brands from './components/Brands/Brands';
 import Numbers from './components/Numbers/Numbers';
+import ServicesGrid from './components/Services/ServicesGrid';
 
 function MainPage() {
     return (
@@ -16,7 +17,8 @@ function MainPage() {
             <Banner />
             <Numbers />
             <Clients />
-            <Services />
+            {/* <Services /> */}
+            <ServicesGrid />
             <Strengths />
             <Brands />
             <Footer />
