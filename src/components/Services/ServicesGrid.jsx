@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './servicesGrid.module.css'
 import services from './data.json'
+import { motion } from 'framer-motion'
 
 const ServicesGrid = () => {
     return (
@@ -8,7 +9,11 @@ const ServicesGrid = () => {
             <div className={styles.sectionTitle}>
                 <span>What we do</span>
             </div>
-            <div className={styles.servicesGrid}>
+            <motion.div 
+                className={styles.servicesGrid}
+                whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+                transition={{ duration: 1 }}
+                >
                 {services.map((service, index) => {
                     return (
                         <div className={styles.serviceItem}>
@@ -25,7 +30,7 @@ const ServicesGrid = () => {
                         </div>
                     )
                 })}
-            </div>
+            </motion.div>
         </>
     )
 }
