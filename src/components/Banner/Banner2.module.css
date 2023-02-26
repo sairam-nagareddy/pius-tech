@@ -1,0 +1,30 @@
+.bannerContainer{
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    background-image: linear-gradient(to left, transparent, transparent, #1F1F1F), url(../../assets/buddha3.jpeg);
+    background-size: cover;
+    background-position: 10%;
+    background-repeat: no-repeat;
+}
+
+.bannerContent{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 1.5rem;
+    border-radius: 50px;
+    max-width: 600px;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    background-color: rgba(31,31,31, 0.2);
+}
+
+.bannerTitle{
+    font-family: 'Merriweather';
+    font-size: 3rem;
+}
+
+.bannerSubText{
+    font-size: 1rem;
+}
