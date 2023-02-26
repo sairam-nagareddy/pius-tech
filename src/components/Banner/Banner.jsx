@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Banner.module.css'
-import buddha from '../../assets/buddha2.png'
+// import buddha from '../../assets/buddha2.png'
+import buddha2 from '../../assets/buddha3.png'
 import { Link } from 'react-router-dom'
 
 const Banner = () => {
@@ -8,7 +9,7 @@ const Banner = () => {
     return (
         <div className={styles.bannerContainer}>
             <div className={styles.banner}>
-                <img alt="Buddha" src={buddha} className={styles.buddha}></img>
+                <img alt="Buddha" src={buddha2} className={styles.buddha}></img>
                 <div className={styles.bannerContent}>
                     <div className={styles.bannerTitle}>
                         <span>Complete the <span style={{whiteSpace:'nowrap'}}>E-Commerce</span> <br></br> Circle with </span><span className='bold' style={{color: "orange"}}>us.</span>
