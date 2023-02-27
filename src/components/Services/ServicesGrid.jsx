@@ -9,14 +9,14 @@ const ServicesGrid = () => {
             <div className={styles.sectionTitle}>
                 <span>What we do</span>
             </div>
-            <motion.div 
-                className={styles.servicesGrid}
-                whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-                transition={{ duration: 1 }}
-                >
+            <div className={styles.servicesGrid}>
                 {services.map((service, index) => {
                     return (
-                        <div className={styles.serviceItem}>
+                        <motion.div 
+                            className={styles.serviceItem}
+                            whileInView={{ x: [-50, 0], opacity: [0, 1] }}
+                            transition={{ duration: 0.3, type: "easeIn", delay: 0.3 }}
+                            >
                             <div className={styles.serviceIcon} dangerouslySetInnerHTML={{ __html: service.image }}>
                             </div>
                             <div className={styles.serviceContent}>
@@ -27,10 +27,10 @@ const ServicesGrid = () => {
                                     <p>{service.info}</p>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     )
                 })}
-            </motion.div>
+            </div>
         </>
     )
 }
