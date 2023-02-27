@@ -5,6 +5,11 @@
         "image": "<i class='fa-solid fa-magnifying-glass'></i>"
     },
     {
+        "title": "Pricing Analysis",
+        "info": "The pricing of your product is the most critical part of your Online Business. We help you set the correct pricing so that you make profits in online as well as offline markets.",
+        "image": "<i class='fa-solid fa-rocket'></i>"
+    },
+    {
         "title": "Comprehensive Keyword Research",
         "info": "Identifying the words Online customers search to find and purchase products is at the heart of selling on any Online Marketplace. We use a sophisticated process for identifying targeted keywords to allow your products to be indexed and searchable by the search algorithm as well as for Advertising campaigns using customer surveys and keyword research software.",
         "image": "<i class='fa-solid fa-book'></i>"
@@ -23,11 +28,6 @@
         "title": "Reporting",
         "info": "We provide a monthly strategy report which details key performance metrics, outlines our strategy, tasks performed by us, and action steps for the next month. The strategic report presents a simple executive summary to see at a snapshot the performance of the Online Marketplace account. This helps paint a clear picture of the account health and informs stakeholders of key information.",
         "image": "<i class='fa-solid fa-file-lines'></i>"
-    },
-    {
-        "title": "Pricing Analysis",
-        "info": "The pricing of your product is the most critical part of your Online Business. We help you set the correct pricing so that you make profits in online as well as offline markets.",
-        "image": "<i class='fa-solid fa-rocket'></i>"
     },
     {
         "title": "External Traffic Sources",
