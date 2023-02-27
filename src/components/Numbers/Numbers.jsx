@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Numbers.module.css'
+import CountUp from 'react-countup'
 
 const Numbers = () => {
     useEffect(() => {
@@ -9,19 +10,24 @@ const Numbers = () => {
     return (
         <div className={styles.NumberSection}>
             <div className={styles.Number}>
-                <span className={styles.NumberValue}>500%</span>
+                {/* <span className={styles.NumberValue}>500%</span> */}
+                <div className={styles.countContainer}>
+                    <CountUp className={styles.NumberValue} end={500}></CountUp><span className={styles.NumberValue}>%</span>
+                </div>
                 <span className={styles.NumberTag}>Average Profit Increase</span>
             </div>
             <div className={styles.Number}>
-                <span className={styles.NumberValue}>3</span>
+                <CountUp className={styles.NumberValue} end={3} duration={1}></CountUp>
                 <span className={styles.NumberTag}>Awards Received</span>
             </div>
             <div className={styles.Number}>
-                <span className={styles.NumberValue}>$50 M</span>
+                <div className={styles.countContainer}>
+                    <span className={styles.NumberValue}>$</span><CountUp className={styles.NumberValue} end={50}></CountUp><span className={styles.NumberValue}>M</span>
+                </div>
                 <span className={styles.NumberTag}>Annual Revenue Managed</span>
             </div>
             <div className={styles.Number}>
-                <span className={styles.NumberValue}>5</span>
+                <CountUp className={styles.NumberValue} end={5} duration={1}></CountUp>
                 <span className={styles.NumberTag}>Certifications</span>
             </div>
         </div>

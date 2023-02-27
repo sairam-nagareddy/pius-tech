@@ -4,6 +4,11 @@
     justify-content: space-evenly;
 }
 
+.countContainer {
+    display: flex;
+    flex-direction: row;
+}
+
 .Number{
     text-align: center;
     display: flex;
