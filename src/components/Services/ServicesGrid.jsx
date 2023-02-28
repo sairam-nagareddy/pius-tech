@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const ServicesGrid = () => {
     return (
-        <>
+        <div className={styles.servicesSection}>
             <div className={styles.sectionTitle}>
                 <span>What we do</span>
             </div>
@@ -31,7 +31,10 @@ const ServicesGrid = () => {
                     )
                 })}
             </div>
-        </>
+            <div className={styles.servicesTagline} style={{padding: '20px'}}>
+                <p style={{textAlign:'center'}}>That's not all. We can help you build your own Website and Mobile App.</p>
+            </div>
+        </div>
     )
 }
 

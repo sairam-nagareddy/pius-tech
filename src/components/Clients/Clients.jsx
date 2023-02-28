@@ -11,9 +11,10 @@ import firstCry from '../../assets/firstcry.png'
 import tatacliq from '../../assets/tatacliq.png'
 import moglix from '../../assets/moglix.png'
 import healthkart from '../../assets/healthkart.png'
+import flipkart from "../../assets/flipkart.jpeg"
 
 const marketplaces = [
-  amazon, ebay, walmart, etsy, meesho, jiomart, nykaa, firstCry, tatacliq, moglix, healthkart
+  amazon, flipkart, ebay, walmart, etsy, meesho, jiomart, nykaa, firstCry, tatacliq, moglix, healthkart
 ]
 
 const Clients = () => {

@@ -5,6 +5,7 @@
     align-items: center;
     padding: 0 2rem 3rem 2rem;
     margin: 3rem 0rem;
+    overflow: hidden;
 }
 
 .titleContainer {
@@ -188,7 +189,30 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 800px) and (max-width: 1349px){
+    .container {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .circle{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        bottom: 0;
+    }
+
+    .circle1{
+        left: 10px;
+    }
+
+    .circle3{
+        right: 10px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
     .strengthContainer{
         margin-bottom: 5rem;
     }
@@ -233,5 +257,12 @@
         position: relative;
         bottom: 0;
         right: 20px;
+    }
+}
+
+@media screen and (max-width: 282px) {
+    .circle{
+        width: 270px;
+        height: 270px;
     }
 }

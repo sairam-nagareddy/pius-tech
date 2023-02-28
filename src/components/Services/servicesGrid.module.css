@@ -1,3 +1,7 @@
+.servicesSection{
+    margin-bottom: 7rem;
+}
+
 .sectionTitle{
     font-size: 3rem;
     font-family: 'Merriweather';
@@ -8,8 +12,8 @@
 .servicesGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3rem;
-    padding: 3rem;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .serviceItem{
@@ -42,6 +46,23 @@
     font-size: 1.7rem;
     /* color: orange; */
     font-weight: bold;
+}
+
+.serviceText{
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1150px) {
+    .servicesGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        padding: 3rem;
+    }
+    
+    .serviceText{
+        font-size: 0.75rem;
+    }
 }
 
 @media screen and (max-width: 800px) {
