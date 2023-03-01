@@ -14,8 +14,8 @@ const ServicesGrid = () => {
                     return (
                         <motion.div 
                             className={styles.serviceItem}
-                            whileInView={{ x: [-25, 0], opacity: 1 }}
-                            transition={{ duration: 0.2, delay: 0.2}}
+                            whileInView={{ x: [-35, 0], opacity: 1 }}
+                            transition={{ duration: 0.3, delay: 0.2}}
                             >
                             <div className={styles.serviceIcon} dangerouslySetInnerHTML={{ __html: service.image }}>
                             </div>
