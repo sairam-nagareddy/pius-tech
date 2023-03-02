@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './servicesGrid.module.css'
 import services from './data.json'
 import { motion } from 'framer-motion'
+import lightbulb from '../../assets/lightbulb.png'
 
 const ServicesGrid = () => {
     return (
@@ -31,8 +32,9 @@ const ServicesGrid = () => {
                     )
                 })}
             </div>
-            <div className={styles.servicesTagline} style={{padding: '20px'}}>
-                <p style={{textAlign:'center'}}>That's not all. We can help you build your own Website and Mobile App.</p>
+            <div className={styles.servicesTagline} style={{padding: '20px', display:'flex', alignItems:'center', justifyContent:'center'}}>
+                <img style={{width:'25px', marginRight:'10px'}} src={lightbulb}></img>
+                <p>That's not all. We can help you build your own Website and Mobile App.</p>
             </div>
         </div>
     )
