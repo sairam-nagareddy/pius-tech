@@ -2,9 +2,18 @@ import React from 'react'
 import styles from './servicesGrid.module.css'
 import services from './data.json'
 import { motion } from 'framer-motion'
+import VisibilitySensor from 'react-visibility-sensor'
 import lightbulb from '../../assets/lightbulb.png'
 
 const ServicesGrid = () => {
+    const motionVariants = {
+        hidden: { opacity: 0, x: -100 },
+        visible: {
+          opacity: 1,
+          x: 0,
+          transition: { duration: 0.2, delay: 0.2 },
+        },
+    };
     return (
         <div className={styles.servicesSection}>
             <div className={styles.sectionTitle}>
@@ -13,22 +22,27 @@ const ServicesGrid = () => {
             <div className={styles.servicesGrid}>
                 {services.map((service, index) => {
                     return (
-                        <motion.div 
-                            className={styles.serviceItem}
-                            whileInView={{ x: [-35, 0], opacity: 1 }}
-                            transition={{ duration: 0.3, delay: 0.2}}
-                            >
-                            <div className={styles.serviceIcon} dangerouslySetInnerHTML={{ __html: service.image }}>
-                            </div>
-                            <div className={styles.serviceContent}>
-                                <div className={styles.serviceTitle}>
-                                    <span>{service.title}</span>
+                        <VisibilitySensor partialVisibility>
+                        {({ isVisible }) => (
+                            <motion.div 
+                                className={styles.serviceItem}
+                                initial="hidden"
+                                animate={isVisible ? "visible" : "hidden"}
+                                variants={motionVariants}
+                                >
+                                <div className={styles.serviceIcon} dangerouslySetInnerHTML={{ __html: service.image }}>
                                 </div>
-                                <div className={styles.serviceText}>
-                                    <p>{service.info}</p>
+                                <div className={styles.serviceContent}>
+                                    <div className={styles.serviceTitle}>
+                                        <span>{service.title}</span>
+                                    </div>
+                                    <div className={styles.serviceText}>
+                                        <p>{service.info}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.div>
+                            </motion.div>
+                        )}
+                        </VisibilitySensor>
                     )
                 })}
             </div>
